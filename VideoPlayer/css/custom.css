@@ -1,0 +1,237 @@
+/* Dani Perchés - Custom CSS File */
+
+/* General styles */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: #E8F5FF;
+}
+
+.container-end {
+    margin-bottom: 40px;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.margin {
+    margin-top: 20px;
+}
+
+.no-margin {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.vertical-align {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: -webkit-flex; /* For Safari */
+    -webkit-justify-content: center; /* For Safari */
+    -webkit-align-items: center; /* For Safari */
+}
+
+.signin-body {
+    background-image: url("../img/signin_background.jpg");
+}
+
+.signup-body {
+    background-image: url("../img/signup_background.jpg");
+}
+
+.sign-content {
+    background: rgba(232, 245, 255, 0.9);
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/* End of general styles */
+
+/* Main menu styles */
+
+.main-menu {
+    background-image: linear-gradient(to bottom,#155c87 0, #156c97 100%);
+    border-color: #156c97;
+}
+
+.menu-brand {
+    color: white !important;
+}
+
+.menu-list>li>a {
+    color: white !important;
+}
+
+/* End of main menu styles */
+
+/* Jumbotron styles */
+
+.jumbotron-img {
+    background-image: url("../img/jumbotron_img1.jpg");
+}
+
+/* End of jumbotron styles */
+
+/* Form styles */
+
+.form-signin {
+    max-width: 350px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin-heading {
+    text-align: center;
+    color: #155c87;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox,
+.form-signin button {
+    margin-bottom: 10px;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* End of signin form */
+
+/* Signup form */
+
+.form-textfield legend {
+    margin-top: 20px;
+    border-bottom-color: #AFC3DC;
+}
+
+.form-signup .row {
+    margin-bottom: 10px;
+}
+
+.form-signup-heading {
+    color: #155c87;
+}
+
+/* End of form styles */
+
+/* VideoPlayer styles */
+
+.video-wrapper {
+    position: relative;
+    padding: 0;
+}
+
+.video-wrapper:before {
+    position: absolute;
+}
+
+.video-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10000000000000;
+    margin: 10px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.video-controls-lg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 99%;
+    z-index: 10000000000000;
+    margin: 10px;
+}
+
+.progress {
+    height: 6px;
+}
+
+.progress-control {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.volume-control {
+    width: 80px;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* End of VideoPlayer styles */
+
+/* Video information box */
+
+.video-infoBox {
+    background-color: #156691;
+    color: white;
+    padding: 10px;
+}
+
+.scenes-div {
+    background-color: #156691;
+    padding: 10px;
+}
+
+/* End of video information box */
+
+/* Footer styles */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient(to bottom,#155c87 0, #156c97 100%);
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+/* End of footer styles */

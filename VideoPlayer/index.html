@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Template</title>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<div class="row">
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top main-menu">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand menu-brand" href="index.html">
+                        Title
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav menu-list">
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="input-group">
+                            <input type="search" class="form-control" placeholder="Search" />
+                            <div class="input-group-addon">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right menu-list">
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</div>
+<div class="jumbotron jumbotron-img">
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p>Bootstrap template. Only for testing purposes.</p>
+        <p><a class="btn btn-primary btn-lg" href="signup.html" role="button">Sign up &raquo;</a></p>
+    </div>
+</div>
+<div class="container container-end">
+    <div class="row content">
+        <main class="col-md-12 col-sm-12 col-xs-12">
+            <article class="col-md-10">
+                <div class="row">
+                    <div class="myVideo">
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+</div>
+<div class="row">
+    <footer class="footer">
+        <p>Footer content</p>
+    </footer>
+</div>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- Bootstrap - Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- DaniPerches.VideoPlayer Plugin -->
+<script src="js/daniPerches.videoPlayer.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    //V2:OK- new jQuery.DaniPerches.VideoPlayer(jQuery(".myVideo"), null, null);
+    //V1:OK- $(".myVideo").DaniPerches_VideoPlayer(null,null);
+    new jQuery.DaniPerches.VideoPlayer(".myVideo", null, {
+        url: "http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_2mb.mp4",
+        type: "video/mp4",
+        poster: "http://lorempixel.com/950/534/nature/5",
+        enableControls: true
+    });
+});
+</script>
+</body>
+</html>
